@@ -1,82 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Handjet&family=Noto+Sans+Display&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,700&family=Righteous&family=Roboto+Mono&display=swap');
-body{
-    background-image: url(https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png);
-    width: 100vw;
-    height: 100vh;
-    background-size: 100% 100%;
-    overflow: hidden;
-    font-family: 'Righteous', cursive;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
 
-#astronaut-1{
-    width: 480px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    animation: floating 5s infinite;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png");
+  background-size: 100% 100%;
+}
+
+#astronaut1 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 500px;
+  animation: floating 5s infinite ease-in;
+}
+
+#astronaut2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  height: 425px;
+  animation: floating 4s infinite ease-in;
 }
 
 @keyframes floating {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(50px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
 }
 
-#astronaut-2{
-    width: 350px;
-    position: absolute;
-    top: 42%;
-    left: 30%;
-    animation: floating 5s infinite;
+form {
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  background-color: white;
+  width: 450px;
+  padding: 0px 75px;
+  border-radius: 5px;
 }
 
-form{
-    position: absolute;
-    top: 15%;
-    left: 56%;
-    width: 450px;
-    padding: 40px 30px;
-    background-color: white;
-    border-radius: 30px;
+.block-display {
+  display: block;
 }
 
-.block-display{
-    display: block;
-    margin-left: 14%;
+label {
+  font-size: 16px;
+  margin: 20px 0px 4px 0px;
 }
 
-label{
-    font-size: 16px;
-    margin: 20px 0 4px 0;
-    margin-left: 14%;
+input[type="number"],
+input[type="text"],
+select {
+  width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 0 5px;
 }
 
-h1{
-    font-size: 26px;
-    width: 280px;
-    padding: 1px;
-    text-align: center;
-    margin: 20px auto;
+.rent-label {
+  margin-right: 10px;
 }
 
-input[type="text"], input[type="email"], select{
-    width: 300px;
-    height: 40px;
-    padding: 0 5px;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    margin-left: 14%;
+#button {
+  display: block;
+  border-radius: 20px;
+  background-color: #ec7920;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  margin: 40px auto;
 }
 
-input[type="submit"]{
-    background-color: chocolate;
-    color: white;
-    border-radius: 10px;
-    margin: 20px auto;
-    font-size: 20px;
+h1 {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1.6em;
+  width: 280px;
 }
 
 
